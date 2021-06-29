@@ -1,0 +1,189 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	max-height: 100vh;
+	min-height: 100vh;
+	font-family: regular;
+	color: #1B1B1B;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(image/banner.png);
+}
+@font-face{
+	font-family: regular;
+	src: url(font/Rubik-Regular.ttf);
+}
+.bflex{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.cflex{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.tmargin{
+	margin-top: 15px;
+}
+.blue{
+	color: #5441DE !important;
+}
+input, button{
+	font-family: regular;
+}
+.delimiter{
+	height: auto;
+	width: 85%;
+	max-width: 1080px;
+	margin: 0px auto;
+}
+.calc{
+	height: 100vh;
+	width: 100%;
+}
+.hcalc{
+	height: auto;
+	width: 100%;
+}
+.winput{
+	height: auto;
+	width: 100%;
+}
+.winput span{
+	display: block;
+	font-size: 14px;
+	color: #bbb;
+}
+.winput input{
+	height: 40px;
+	width: 100%;
+	border: none;
+	outline: none;
+	color: #1B1B1B !important;
+	margin-top: 5px;
+}
+.winput input[placeholder]{
+	color: #1B1B1B !important;
+}
+.in input{
+	font-size: 15px;
+}
+.out input{
+	font-size: 35px;
+}
+.ccalc{
+	position: relative;
+	height: auto;
+	width: 100%;
+	max-width: 325px;
+	padding: 25px;
+	box-sizing: border-box;
+	border-radius: 15px;
+	background-color: #fff;
+	box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.05);
+	margin: 0px auto;
+	transition: .5S;
+}
+.bcalc{
+	height: auto;
+	width: 100%;
+	margin-top: 25px;
+}
+.operator{
+	height: auto;
+	width: 100%;
+	padding: 15px;
+	border-radius: 10px;
+	box-sizing: border-box;
+	background-color: #EEEFF8;
+}
+.operator span{
+	font-size: 15px;
+	color: #5441DE;
+}
+.op{
+	height: auto;
+	width: 100%;
+	flex-flow: wrap;
+	margin-top: 15px;
+}
+.op button{
+	height: 35px;
+	width: 35px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font-size: 15px;
+	color: #5441DE;
+	border-radius: 100%;
+	background-color: #DCDCF3;
+}
+.op button i{
+	font-size: 16px;
+	vertical-align: middle;
+}
+.angka{
+	height: auto;
+	width: 100%;
+}
+.angka button{
+	position: relative;
+	height: 40px;
+	width: 100%;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	font-size: 20px;
+	color: #1B1B1B;
+	border-radius: 5px;
+	background-color: transparent;
+	transition: .5s;
+}
+.angka button:active{
+	background-color: #EEEFF8;
+	color: #5441DE;
+	transition: .5s;
+}
+.ans button{
+	font-size: 35px;
+	color: #5441DE;
+	border-radius: 5px;
+	background-color: #EEEFF8;
+}
+.btn-wed{
+	position: absolute;
+	height: 35px;
+	width: 35px;
+	cursor: pointer;
+	top: 15px;
+	right: 0px;
+	border-radius: 100%;
+}
+.btn-wed i{
+	font-size: 15px;
+	color: #1B1B1B;
+	transition: .5s;
+}
+.btn-wed:hover i{
+	color: #5441DE;
+	transition: .5s;
+}
+.wed.action{
+	display: flex;
+	align-items: center;
+	justify-content: space-between !important;
+	max-width: 750px;
+	transition: .5s;
+}
+
+@media screen and (max-width: 768px){
+	.btn-wed{
+		display: none;
+	}
+}

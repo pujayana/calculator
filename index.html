@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width">
+	<title> Calculator - Pujayana </title>
+	<link rel="icon" type="text/css" href="image/banner.png">
+	<link rel="stylesheet" type="text/css" href="simplelineicon/simple-line-icons.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="calc cflex">
+	<div class="delimiter">
+		<div class="ccalc wed">
+			<a class="btn-wed"> <i class="icon-frame"></i> </a>
+			<div class="hcalc">
+				<div class="winput in">
+					<span> Input </span>
+					<input id="x" type="text" placeholder="0" name="input">
+				</div>
+				<div class="winput out tmargin">
+					<span> Hasil </span>
+					<input id="y" type="text" placeholder="0" name="hasil" readonly>
+				</div>
+			</div>
+			<div class="bcalc tmargin">
+				<div class="operator">
+					<span> Operator </span>
+					<div class="op bflex">
+						<button type="button" onclick="field(this.value)" value="+"> + </button>
+						<button type="button" onclick="field(this.value)" value="-"> - </button>
+						<button type="button" onclick="field(this.value)" value="*"> x </button>
+						<button type="button" onclick="field(this.value)" value="/"> / </button>
+						<button type="button" onclick="removeOne()"> <i class="icon-arrow-left"></i> </button>
+					</div>
+				</div>
+				<div class="angka bflex tmargin">
+					<button type="button" value="1" onclick="field(this.value)"> 1 </button>
+					<button type="button" value="2" onclick="field(this.value)"> 2 </button>
+					<button type="button" value="3" onclick="field(this.value)"> 3 </button>
+				</div>
+				<div class="angka bflex">
+					<button type="button" value="4" onclick="field(this.value)"> 4 </button>
+					<button type="button" value="5" onclick="field(this.value)"> 5 </button>
+					<button type="button" value="6" onclick="field(this.value)"> 6 </button>
+				</div>
+				<div class="angka bflex">
+					<button type="button" value="7" onclick="field(this.value)"> 7 </button>
+					<button type="button" value="8" onclick="field(this.value)"> 8 </button>
+					<button type="button" value="9" onclick="field(this.value)"> 9 </button>
+				</div>
+				<div class="angka bflex">
+					<button type="button" value="." onclick="field(this.value)"> . </button>
+					<button type="button" value="0" onclick="field(this.value)"> 0 </button>
+					<button type="button" class="blue" onclick="removeAll()"> C </button>
+				</div>
+				<div class="angka tmargin ans">
+					<button type="button" onclick="result()"> = </button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
